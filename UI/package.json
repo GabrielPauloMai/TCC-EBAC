@@ -1,0 +1,17 @@
+{
+  "name": "teste-e2e-ebac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "cy:dash": "npx cypress run --record --key a08f7948-0017-4d38-a6b8-29ad0ac30d89"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "cypress": "^13.6.0",
+    "faker-br": "^0.4.1"
+  }
+}
