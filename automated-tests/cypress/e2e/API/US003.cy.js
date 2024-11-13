@@ -34,7 +34,7 @@ describe('API de Cupons', () => {
         });
     });
 
-    it.only('Deve listar um cupom específico', function () {
+    it('Deve listar um cupom específico', function () {
         const timestamp = new Date().getTime();
         this.newCoupon.code = `${this.newCoupon.code}_${timestamp}`;
 
