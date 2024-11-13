@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import ProductsPage from "../support/page_objects/products.page";
-import CartPage from "../support/page_objects/cart.page";
+import ProductsPage from "../../support/page_objects/products.page";
+import CartPage from "../../support/page_objects/cart.page";
 
 before(() => {
     cy.fixture('perfil').then(userProfile => {
