@@ -10,8 +10,10 @@ pipeline {
         stage('Instalar dependências') {
             steps {
                 ansiColor('css') {
-                    sh 'cd automated-tests'
-                    sh 'npm install'
+                    sh '''
+                        cd automated-tests
+                        npm install
+                    '''
                 }
             }
         }
@@ -19,8 +21,10 @@ pipeline {
         stage('Executar testes') {
             steps {
                 ansiColor('css') {
-                    sh 'cd automated-tests'
-                    sh 'npx cypress run"' 
+                    sh '''
+                        cd automated-tests
+                        npx cypress run
+                    '''
                 }
             }
         }
