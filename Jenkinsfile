@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Clonar o repositório') {
-            steps {
-                git 'https://github.com/GabrielPauloMai/TCC-EBAC' 
-            }
-        }
         
         stage('Instalar dependências') {
             steps {
