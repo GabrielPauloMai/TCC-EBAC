@@ -10,6 +10,7 @@ pipeline {
         stage('Instalar dependências') {
             steps {
                 ansiColor('css') {
+                    sh 'cd automated-tests'
                     sh 'npm install'
                 }
             }
