@@ -10,7 +10,7 @@ pipeline {
  
         stage('Executar testes') {
             steps {
-                sh 'cd ./automated-tests && npx run test'
+                sh 'cd ./automated-tests && npm test'
             }
         }
     }
