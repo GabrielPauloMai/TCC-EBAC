@@ -1,17 +1,16 @@
 pipeline {
     agent any
-
     stages {
         
         stage('Instalar dependências') {
             steps {
-                sh 'npm install'
+                sh 'cd ./automated-tests && npm install'
             }
         }
  
         stage('Executar testes') {
             steps {
-                sh 'npx run test'
+                sh 'cd ./automated-tests && npx run test'
             }
         }
     }
