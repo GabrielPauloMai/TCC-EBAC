@@ -1,11 +1,10 @@
 {
-  "name": "teste-e2e-ebac",
+  "name": "tcc-ebac",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run",
-    "cy:dash": "npx cypress run --record --key a08f7948-0017-4d38-a6b8-29ad0ac30d89"
+    "test": "npx cypress run"
   },
   "keywords": [],
   "author": "",
